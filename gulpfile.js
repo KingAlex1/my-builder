@@ -27,11 +27,17 @@ $.gulp.task('default', $.gulp.series(
     'js:foundation',
     'js:process',
     'copy:image',
+
     'css:foundation',
     'sprite:svg'
+//    'sprite:gen'
+
+
   ),
   $.gulp.parallel(
-    'watch',
-    'serve'
+      'watch',
+      'serve'
   )
 ));
+
+
