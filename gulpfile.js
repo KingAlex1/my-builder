@@ -29,9 +29,9 @@ $.gulp.task('default', $.gulp.series(
     'copy:image',
 
     'css:foundation',
-    'sprite:svg'
+    'sprite:svg',
 //    'sprite:gen'
-
+    'copy:fonts'
 
   ),
   $.gulp.parallel(
