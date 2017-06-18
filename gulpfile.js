@@ -31,7 +31,8 @@ $.gulp.task('default', $.gulp.series(
     'css:foundation',
     'sprite:svg',
 //    'sprite:gen'
-    'copy:fonts'
+    'copy:fonts',
+    'sprite'
 
   ),
   $.gulp.parallel(
