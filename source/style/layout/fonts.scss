@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fotns/roboto-bold-webfont.woff') format('woff'),
+    url('../fotns/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url('../fotns/roboto-bolditalic-webfont.woff') format('woff'),
+    url('../fotns/roboto-bolditalic-webfont.svg#robotobold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('../fotns/roboto-italic-webfont.woff') format('woff'),
+    url('../fotns/roboto-italic-webfont.svg#robotoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fotns/roboto-light-webfont.woff') format('woff'),
+    url('../fotns/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('../fotns/roboto-lightitalic-webfont.woff') format('woff'),
+    url('../fotns/roboto-lightitalic-webfont.svg#robotolight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fotns/roboto-medium-webfont.woff') format('woff'),
+    url('../fotns/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotomedium_italic';
+    src: url('../fotns/roboto-mediumitalic-webfont.woff') format('woff'),
+    url('../fotns/roboto-mediumitalic-webfont.svg#robotomedium_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fotns/roboto-regular-webfont.woff') format('woff'),
+    url('../fotns/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@mixin roboto($style: regular){
+    @if $style == regular {
+        font-family: 'robotoregular';
+    }
+    @if $style == bold {
+        font-family: 'robotobold';
+    }
+    @if $style == italic {
+        font-family: 'robotomedium_italic';
+    }
+    @if $style == medium {
+        font-family: 'robotomedium';
+    }
+    @if $style == light {
+        font-family: 'robotolight';
+    }
+    @if $style == light_italic {
+        font-family: 'robotolight_italic';
+    }
+    @if $style == bold_italic{
+        font-family: 'robotobold_italic';
+
+    }
+}

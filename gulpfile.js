@@ -30,7 +30,7 @@ $.gulp.task('default', $.gulp.series(
 
     'css:foundation',
     'sprite:svg',
-//    'sprite:gen'
+//    'sprite:gen',
     'copy:fonts',
     'sprite'
 

@@ -1,0 +1,54 @@
+.user__pic {
+  width: 147px;
+  height: 147px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  overflow: hidden;
+  display: inline-block;
+  background-size: 100% 100%;
+
+}
+
+.user__name {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.user__desc {
+  font-weight: 100;
+  color: #ffffff;
+}
+.user-description{
+  height: 100%;
+  display: inline-block;
+  padding: 0 78px 30px 80px ;
+}
+.user-description__image{
+  display: inline-block;
+  position: relative;
+  background-size: 100% 100%;
+
+
+
+}
+.user-description__avatar {
+  display: inline-block;
+  width: 443px;
+  height: 391px;
+  margin: 20px;
+  position: relative;
+  align-content: center;
+  float: left;
+
+}
+.user-description__title{
+  color: #474b57;
+  font-size: 24px;
+  text-align: center;
+}
+.user-description__text {
+  color: #474b57;
+  font-size: 10px;
+}
+

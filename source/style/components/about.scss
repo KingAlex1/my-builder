@@ -1,0 +1,52 @@
+.about {
+  @extend %clearfix;
+}
+
+.about__left,.about__right {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+
+.about__left {
+  background: $white;
+  height: 100%;
+  }
+.about__right {
+  background: $beige;
+  height: 100%;
+  }
+
+.about__left-title {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 43px 78px 43px 80px;
+  display: inline-block;
+  float: left;
+  position: relative;
+  text-align: center;
+  color: #474b57;
+}
+
+.about__right-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 43px 78px 43px 80px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #474b57;
+}
+
+.about__right-description{
+
+  color: #474b57;
+  font-size: 9px;
+  padding: 33px 28px 61px 39px;
+}
+
+.about__right-content{
+  color: #474b57;
+  font-size: 15px;
+  padding-left:80px ;
+}

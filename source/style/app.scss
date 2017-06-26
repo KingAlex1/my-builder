@@ -1,5 +1,11 @@
-body {
-  margin: 0;
-}
+// colors
+$white:#efeee9;
+$beige:#eae8e2;
 
+// includes
+@import "mixins/mixins";
+@import "layout/fonts";
+@import "layout/base.scss";
 @import 'common/greating';
+
+@import "components/**/*";
