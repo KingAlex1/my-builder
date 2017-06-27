@@ -6,27 +6,54 @@
   display: block;
   padding: 30px;
   color:$white ;
+  margin-top:-160px;
 
 
   }
 
 .footer__row {
   display: inline-block;
+  position: relative;
 }
 
 .footer__col-left {
-  width: 400px;
+  width: 660px;
+  display: inline-block;
+}
+
+.footer__col-centr{
+  width: 600px;
+
+}
+.menu__link{
+  font-weight: bold;
+  color: $white;
+  text-decoration: none;
+
+}
+
+.footer__col-right{
+  padding: 28px;
+
+
+
 }
 
 .menu__item {
   display: inline-block;
   padding: 20px;
+  display: inline-block;
 
 }
 
 .menu {
   position: relative;
-
+}
+.footer__col-bottom{
+  height: 38px;
+  text-align: center;
+  background-color: #2754a0;
+  margin-top: -38px;
 }
 
 

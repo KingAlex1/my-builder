@@ -1,0 +1,47 @@
+
+.contacts__item {
+  padding: 28px 19px 28px 19px;
+  display: inline-block;
+  font-size: 10px;
+  color: #474b57;
+  font-weight: bold;
+  height: 40px;
+  width: 200px;
+
+}
+.contacts {
+  width: 582px;
+  height: 283px;
+  background-color: $white;
+  opacity: .7;
+  position: absolute;
+  display: block;
+  top: 25%;
+  left: 30%;
+
+}
+
+.contact-row__icon{
+  background-image: url("../img/skype_n.svg");
+}
+
+.socials__item{
+  display: inline-block;
+}
+.socials__item {
+
+  display: inline-block;
+  padding: 16px;
+  background: url(../img/sprite.png) 0 -113px no-repeat ;
+  background: url(../img/sprite.png) 0px -56px no-repeat;
+
+  width: 31px;
+  height: 17px;
+  }
+
+
+@each $item in (vk, tw, in) {
+  .socials__link_#{$item}{
+    background: url('../img/sprite.png');
+  }
+}

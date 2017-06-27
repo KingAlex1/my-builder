@@ -12,13 +12,6 @@ block content
                         each item in ['vk', 'tw', 'in']
                             li.socials__item
                                 a(href=`${item}`).socials__link
-                .hamburger.hero__menu
-                .arrow-down.hero__scroll-button
-                    svg.arrow-down__pic
-                        use(xlink:href="/assets/img/sprite.svg#arrow-down")
-                .hero__title
-                    .section-title
-                        svg.section-title__pic
                             use(xlink:href="/assets/img/sprite.svg#portfolio-header")
                     .user.hero__user
                         .user__pic
@@ -58,22 +51,32 @@ block content
                         li.skills-list__item
                             .skills-row
                                 .skills-row__title #{item}
-                                ul.skills-row__list
-                                    li.skills-row__item
-                                        .skill
-                                            svg.skill__circle
-                                            .skill__title
+
+                                    ul.skills-row__list
+                                        li.skills-row__item
+                                            .skill
+                                                svg.skill__circle(width='160' height='160')
+                                                    circle.circle-fst(r="60", cx="50%", cy="50%", stroke="#ccc", fill="none")
+                                                    circle.circle-scnd(r="60", cx="50%", cy="50%", transform="rotate(-90 80 80)", fill="none")
+                                                svg.skill__circle(width='160' height='160')
+                                                    circle.circle-fst(r="60", cx="50%", cy="50%", stroke="#ccc", fill="none")
+                                                    circle.circle-scnd(r="60", cx="50%", cy="50%", transform="rotate(-90 80 80)", fill="none")
+                                                svg.skill__circle(width='160' height='160')
+                                                    circle.circle-fst(r="60", cx="50%", cy="50%", stroke="#ccc", fill="none")
+                                                    circle.circle-scnd(r="60", cx="50%", cy="50%", transform="rotate(-90 80 80)", fill="none")
+                                                .skill__title
     section.section.map
         .google-map
         .contacts
             .contacts__title
-                .block-subtitle Контакты
+                .block-subtitle КОНТАКТ
             ul.contacts__list
                 -
                     var contacts = [
-                    ['vk', 'skype_kdn'],
-                    ['mail', 'astahov@gmail.com'],
-                    ['phone', '+7 931 200 93 24'],
+                    ['skype_kdn'],
+                    ['astahov@gmail.com'],
+                    [ '+7 931 200 93 24'],
+                    ['Королев М.О.']
                     ]
 
                 each item in contacts
@@ -96,7 +99,7 @@ block content
         .footer__row
             .footer__col.footer__col-left
                 .footer__text
-                    ul.contacts__list
+                    ul.contacts__list-f
                         -
                             var contacts = [
                             ['skype_kdn'],
@@ -105,9 +108,9 @@ block content
                             ]
 
                         each item in contacts
-                            li.contacts__item.contact-row
-                                .contact-row__icon #{item[0]}
-                                .contact-row__content #{item[1]}
-            .footer__col
-                .footer__text
-                    p © Алексей | создано с любовью в LoftSchool | 2016
+                            li.contacts__item-f.contact-row-f
+                                .contact-row-f__icon #{item[0]}
+                                .contact-row-f__content #{item[1]}
+        .footer__col.footer__col-bottom
+            .footer__text
+                p © Алексей | создано с любовью в LoftSchool | 2016
