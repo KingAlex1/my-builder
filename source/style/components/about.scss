@@ -1,5 +1,6 @@
 .about {
   @extend %clearfix;
+  height: 100vh;
 }
 
 .about__left,.about__right {

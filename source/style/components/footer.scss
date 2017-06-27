@@ -1,54 +1,46 @@
 .footer {
   height: 100px;
-  width: 100%;
+  width: 100vw;
   background-color: #222a3c ;
   opacity: .85;
   display: block;
   padding: 30px;
   color:$white ;
   margin-top:-160px;
+}
 
-
-  }
-
-.footer__row {
+.footer__col-left {
+  width: 35vw;
   display: inline-block;
   position: relative;
 }
 
-.footer__col-left {
-  width: 660px;
-  display: inline-block;
-}
-
 .footer__col-centr{
-  width: 600px;
-
+  width: 30vw;
+  display: inline-block;
+  position: relative;
 }
 .menu__link{
   font-weight: bold;
   color: $white;
   text-decoration: none;
-
 }
 
 .footer__col-right{
+  display: inline-block;
   padding: 28px;
-
-
-
+  width: 35vw;
+  position: relative;
 }
 
 .menu__item {
-  display: inline-block;
-  padding: 20px;
-  display: inline-block;
 
 }
 
 .menu {
   position: relative;
 }
+
 .footer__col-bottom{
   height: 38px;
   text-align: center;

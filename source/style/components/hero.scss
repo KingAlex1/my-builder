@@ -1,14 +1,12 @@
 .hero {
   overflow: hidden;
   width: 100%;
-
-
+  height: 70vh;
 }
 .hero__container {
   position: relative;
   width: 100%;
   height: 100%;
-
 }
 .hero__bg{
   width: 100%;
@@ -19,27 +17,40 @@
   background-size: 100% 100%;
 
 }
-
-
-
 .hero__title {
   right: 0 ;
   left: 0;
   @include centered(y);
-
 }
 .hero__user {
   @include centered();
   text-align: center;
   margin-left: -74px;
-
 }
-
 .hero__scroll-button {
   bottom: 50px;
   @include centered(x);
+}
+.hero__svg{
+  width: 458px;
+  height: 272px;
+  opacity: .85;
+  position: relative;
+  display: inline-block;
+  left: 34%;
+  top: 50%;
+  margin-top: 14% ;
 
+
+;
 
 }
-
-
+.hero__svg-polyline{
+  stroke: $white;
+  fill: none;
+  stroke-width: 3px;
+}
+.hero__svg-circle{
+  stroke: $white;
+  fill:$white;
+}

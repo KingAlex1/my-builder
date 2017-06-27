@@ -13,12 +13,31 @@ block content
                             li.socials__item
                                 a(href=`${item}`).socials__link
                             use(xlink:href="/assets/img/sprite.svg#portfolio-header")
+                svg.hero__svg
+                    g.hero__svg__blog-line
+                        polyline.hero__svg-polyline(points="120 120, 300 154, 174 258, 213 21, 81 44,12 192,300 155, 174 258, 12 192 ")
+                        polyline.hero__svg-polyline(points="446 226,432 66, 301 191,446 226 ")
+                        polyline.hero__svg-polyline(points="446 226, 335 14, 215 180, 271 57, 446 226 ")
+                    g.hero__svg__blog-circle
+                        circle.hero__svg-circle(cx="12", cy="191", r="13")
+                        circle.hero__svg-circle(cx="174", cy="259", r="13")
+                        circle.hero__svg-circle(cx="334", cy="13", r="13")
+                        circle.hero__svg-circle(cx="445", cy="228", r="13")
+                        circle.hero__svg-circle(cx="81", cy="43", r="7")
+                        circle.hero__svg-circle(cx="214", cy="19", r="7")
+                        circle.hero__svg-circle(cx="115", cy="120", r="7")
+                        circle.hero__svg-circle(cx="216", cy="180", r="7")
+                        circle.hero__svg-circle(cx="272", cy="57", r="7")
+                        circle.hero__svg-circle(cx="299", cy="154", r="7")
+                        circle.hero__svg-circle(cx="301", cy="192", r="7")
+                        circle.hero__svg-circle(cx="433", cy="65", r="7")
                     .user.hero__user
                         .user__pic
                             img(src="assets/img/content/user.jpg", alt="").user__pic-img
                         .user__description
                             .user__name Алексей
                             .user__desc Сайт разработчика
+
     section.section.about
         .about__left
             .triangle.triangle_fill_white.about__left-triangle
