@@ -9,10 +9,11 @@ block content
             .hero__container
                 .hero__socials
                     ul.socials
-                        each item in ['vk', 'tw', 'in']
+                        each item in ['vk', 'git', 'in']
                             li.socials__item
-                                a(href=`${item}`).socials__link
+                                a(href=`${item}`)(class='socials__link_'+item)
                             use(xlink:href="/assets/img/sprite.svg#portfolio-header")
+
                 svg.hero__svg
                     g.hero__svg__blog-line
                         polyline.hero__svg-polyline(points="120 120, 300 154, 174 258, 213 21, 81 44,12 192,300 155, 174 258, 12 192 ")
@@ -38,6 +39,7 @@ block content
                             .user__name Алексей
                             .user__desc Сайт разработчика
 
+
     section.section.about
         .about__left
             .triangle.triangle_fill_white.about__left-triangle
@@ -47,12 +49,24 @@ block content
                 //+.block-title('about-header', 'Обо мне.')
                 //+.block-title(style="background-image: url('assets/img/decor/about-header.png')")
                 .block-title__text Обо мне
+            svg.about__svg
+                g.about__svg__blog-line
+                    polyline.about__svg-polyline(points="7 153,72 110, 150 107, 234 164, 202 8, 255 67,99 35,202 8")
+                    polyline.about__svg-polyline(points="7 153,99 35, 150 108")
+                g.hero__svg__blog-circle
+                    circle.about__svg-circle(cx="7", cy="153", r="7")
+                    circle.about__svg-circle(cx="72", cy="110", r="4")
+                    circle.about__svg-circle(cx="150", cy="107", r="7")
+                    circle.about__svg-circle(cx="234", cy="164", r="7")
+                    circle.about__svg-circle(cx="202", cy="8", r="7")
+                    circle.about__svg-circle(cx="255", cy="67", r="7")
+                    circle.about__svg-circle(cx="99", cy="35", r="4")
             .about__left-content
                 .user-description
                     .user-description__image
                         img(src="assets/img/content/user1.jpg", alt="").user-description__avatar
-                    .user-description__title КТО Я
-                        .block-subtitle
+                    .user-description__title
+                        .block-subtitle КТО Я
                     .user-description__text
                         p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
                         p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
@@ -60,8 +74,8 @@ block content
             .triangle.triangle_fill_beige.about__left-triangle
                 svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
                     polygon(points="1000,0 1000,150 0,150")
-            .about__right-title ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
-                .block-subtitle
+            .about__right-title
+                .block-subtitle ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
             .about__right-description
                 p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
             .about__right-content
@@ -83,7 +97,7 @@ block content
                                                 svg.skill__circle(width='160' height='160')
                                                     circle.circle-fst(r="60", cx="50%", cy="50%", stroke="#ccc", fill="none")
                                                     circle.circle-scnd(r="60", cx="50%", cy="50%", transform="rotate(-90 80 80)", fill="none")
-                                                .skill__title
+                                                .skill__title HTML
     section.section.map
         .google-map
         .contacts
@@ -105,7 +119,6 @@ block content
     footer.footer
         .footer__row
             .footer__col.footer__col-left Этот сайт я сделал в рамках обучения в Школе онлайн образования Loftschool
-        .footer__row
             .footer__col.footer__col-centr
                 .footer__menu
                     nav.menu
@@ -113,10 +126,6 @@ block content
                             li.menu__item
                                 a(href="#").menu__link #{item}
             .footer__col.footer__col-right
-                .footer__socials
-                    .socials.socials_rounded
-        .footer__row
-            .footer__col.footer__col-left
                 .footer__text
                     ul.contacts__list-f
                         -
@@ -131,5 +140,5 @@ block content
                                 .contact-row-f__icon #{item[0]}
                                 .contact-row-f__content #{item[1]}
         .footer__col.footer__col-bottom
-            .footer__text
+            .footer__text-btm
                 p © Алексей | создано с любовью в LoftSchool | 2016

@@ -4,21 +4,27 @@
   background-color: #222a3c ;
   opacity: .85;
   display: block;
-  padding: 30px;
-  color:$white ;
   margin-top:-160px;
 }
 
+.footer__row{
+  text-decoration: none;
+  color: $white;
+}
 .footer__col-left {
   width: 35vw;
   display: inline-block;
   position: relative;
+  padding: 20px;
+  bottom: 28px;
+
 }
 
 .footer__col-centr{
   width: 30vw;
   display: inline-block;
   position: relative;
+  bottom: 28px;
 }
 .menu__link{
   font-weight: bold;
@@ -28,13 +34,16 @@
 
 .footer__col-right{
   display: inline-block;
-  padding: 28px;
-  width: 35vw;
   position: relative;
+
 }
 
 .menu__item {
-
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: $white;
+  padding: 20px;
 }
 
 .menu {
@@ -46,6 +55,12 @@
   text-align: center;
   background-color: #2754a0;
   margin-top: -38px;
+}
+.footer__text{
+  padding: 2px 0 2px 30px;
+}
+.contact-row-f__icon{
+  padding: 3px;
 }
 
 

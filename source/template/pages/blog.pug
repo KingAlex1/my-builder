@@ -1,0 +1,88 @@
+extends ../_template
+
+block variables
+  - var title = 'Blog'
+
+block content
+  section.section.hero
+    .hero__bg
+      .hero__container
+        .hero__socials
+          ul.socials
+            each item in ['vk', 'tw', 'in']
+              li.socials__item
+                a(href=`${item}`).socials__link
+              use(xlink:href="/assets/img/sprite.svg#portfolio-header")
+        svg.hero__svg
+          g.hero__svg__blog-line
+            polyline.hero__svg-polyline(points="120 120, 300 154, 174 258, 213 21, 81 44,12 192,300 155, 174 258, 12 192 ")
+            polyline.hero__svg-polyline(points="446 226,432 66, 301 191,446 226 ")
+            polyline.hero__svg-polyline(points="446 226, 335 14, 215 180, 271 57, 446 226 ")
+          g.hero__svg__blog-circle
+            circle.hero__svg-circle(cx="12", cy="191", r="13")
+            circle.hero__svg-circle(cx="174", cy="259", r="13")
+            circle.hero__svg-circle(cx="334", cy="13", r="13")
+            circle.hero__svg-circle(cx="445", cy="228", r="13")
+            circle.hero__svg-circle(cx="81", cy="43", r="7")
+            circle.hero__svg-circle(cx="214", cy="19", r="7")
+            circle.hero__svg-circle(cx="115", cy="120", r="7")
+            circle.hero__svg-circle(cx="216", cy="180", r="7")
+            circle.hero__svg-circle(cx="272", cy="57", r="7")
+            circle.hero__svg-circle(cx="299", cy="154", r="7")
+            circle.hero__svg-circle(cx="301", cy="192", r="7")
+            circle.hero__svg-circle(cx="433", cy="65", r="7")
+          .user.hero__user
+            .user__pic
+              img(src="assets/img/content/user.jpg", alt="").user__pic-img
+            .user__description
+              .user__name Алексей
+              .user__desc Сайт разработчика
+
+  section.section.about
+    .about__left
+      .triangle.triangle_fill_white.about__left-triangle
+        svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
+          polygon(points="0,0 0,150,1000,150")
+      .about__left-content
+        ul.about__topics-list
+          each item in ['Самое вахное в SASS' , 'Приемы в верстке, без котопых не обходится ни один сайт', 'Самый необходимый набор Gulp  плагинов' , 'Почему я выбрал Jade']
+              li.about__topic-name #{item}
+
+
+    .about__right
+      .triangle.triangle_fill_beige.about__left-triangle
+        svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
+          polygon(points="1000,0 1000,150 0,150")
+      .about__right-title
+        .block-subtitle ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
+      .about__right-description
+        p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+      .about__right-content
+
+
+  footer.footer
+    .footer__row
+      .footer__col.footer__col-left Этот сайт я сделал в рамках обучения в Школе онлайн образования Loftschool
+      .footer__col.footer__col-centr
+        .footer__menu
+          nav.menu
+            each item in ['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
+              li.menu__item
+                a(href="#").menu__link #{item}
+      .footer__col.footer__col-right
+        .footer__text
+          ul.contacts__list-f
+            -
+              var contacts = [
+              ['skype_kdn'],
+              ['astahov@gmail.com'],
+              ['+7 931 200 93 24'],
+              ]
+
+            each item in contacts
+              li.contacts__item-f.contact-row-f
+                .contact-row-f__icon #{item[0]}
+                .contact-row-f__content #{item[1]}
+    .footer__col.footer__col-bottom
+      .footer__text-btm
+        p © Алексей | создано с любовью в LoftSchool | 2016

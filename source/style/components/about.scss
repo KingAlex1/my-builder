@@ -7,15 +7,17 @@
   float: left;
   width: 50%;
   position: relative;
+  height: 100vh;
+
 }
 
 .about__left {
   background: $white;
-  height: 100%;
+
   }
 .about__right {
   background: $beige;
-  height: 100%;
+
   }
 
 .about__left-title {
@@ -42,7 +44,7 @@
 .about__right-description{
 
   color: #474b57;
-  font-size: 9px;
+  font-size: 18px;
   padding: 33px 28px 61px 39px;
 }
 
@@ -50,7 +52,38 @@
   color: #474b57;
   font-size: 15px;
   padding-left:82px ;
+
 }
 
+.about__svg{
+  width: 263px;
+  height: 172px;
+  opacity: .2;
+  position: absolute;
+  display: block;
+  stroke: #1056d1;
+  padding-left: 25px;
+
+}
+.about__svg__blog-line{
+ fill: none;
+}
+.about__svg-circle {
+  stroke: #1056d1;
+  fill:#1056d1;
+}
+.about__left-blog{
+  width: 22vw;
+}
+.about__topics-list {
+  position: relative;
+  display: inline-block;
+  float: right;
+  text-align: right;
+
+}
+.about__topic-name {
+  padding: 10px;
+}
 
 

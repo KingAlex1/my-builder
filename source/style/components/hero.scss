@@ -34,17 +34,15 @@
 .hero__svg{
   width: 458px;
   height: 272px;
-  opacity: .85;
-  position: relative;
-  display: inline-block;
+  opacity: .2;
+  position: absolute;
+  display: block;
   left: 34%;
   top: 50%;
-  margin-top: 14% ;
-
-
 ;
-
 }
+
+
 .hero__svg-polyline{
   stroke: $white;
   fill: none;

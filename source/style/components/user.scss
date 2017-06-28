@@ -34,8 +34,8 @@
 }
 .user-description__avatar {
   display: inline-block;
-  width: 443px;
-  height: 391px;
+  width: 100%;
+  height: 100%;
   margin: 20px;
   position: relative;
   align-content: center;
@@ -44,11 +44,11 @@
 }
 .user-description__title{
   color: #474b57;
-  font-size: 24px;
   text-align: center;
 }
+
 .user-description__text {
   color: #474b57;
-  font-size: 10px;
+  font-size: 18px;
 }
 

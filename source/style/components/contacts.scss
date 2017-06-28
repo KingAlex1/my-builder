@@ -7,8 +7,8 @@
   font-weight: bold;
   height: 40px;
   width: 200px;
-
 }
+
 .contacts {
   width: 582px;
   height: 283px;
@@ -18,30 +18,44 @@
   display: block;
   top: 25%;
   left: 30%;
-
 }
 
 .contact-row__icon{
   background-image: url("../img/skype_n.svg");
 }
-
+.socials{
+  padding-top: 20px;
+  padding-left: 20px;
+  ;
+}
 .socials__item{
   display: inline-block;
 }
-.socials__item {
 
-  display: inline-block;
-  padding: 16px;
-  background: url(../img/sprite.png) 0 -113px no-repeat ;
-  background: url(../img/sprite.png) 0px -56px no-repeat;
-
+.socials__link_vk {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: 0px -162px;
   width: 31px;
   height: 17px;
-  }
+  display: inline-block;
+    padding: 12px;
+}
+.socials__link_git{
+  display: inline-block;
+  padding: 12px;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: 0px -216px;
+  width: 26px;
+  height: 22px;
 
+}
 
-@each $item in (vk, tw, in) {
-  .socials__link_#{$item}{
-    background: url('../img/sprite.png');
-  }
+.socials__link_in {
+  background: url(../img/sprite.png) no-repeat ;
+  background-position: 0px -280px;
+  width: 24px;
+  height: 22px;
+  display: inline-block;
+  padding: 12px;
+
 }
