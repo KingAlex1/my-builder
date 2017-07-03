@@ -1,0 +1,64 @@
+
+
+.hero__toolbar {
+  display: inline-block;
+  width:18px;
+  height:18px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero__toolbar i {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 3px;
+  color:#252525;
+  font:bold 14px/.4 Helvetica;
+  text-transform: uppercase;
+  text-indent:-55px;
+  background: #fff;
+  transition:all .2s ease-out;
+}
+
+.hero__toolbar i::before, .hero__toolbar i::after {
+  content:'';
+  width: 18px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left:0;
+  transition:all .2s ease-out;
+}
+
+.hero__toolbar i::before { top: -7px; }
+.hero__toolbar i::after { bottom: -7px; }
+.hero__toolbar:hover i::before { top: -10px; }
+.hero__toolbar:hover i::after { bottom: -10px; }
+.hero__toolbar.active i { background: rgba(0,0,0,0); }
+
+.hero__toolbar.active i::before {
+  top:0;
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.hero__toolbar.active i::after {
+  bottom:0;
+  -webkit-transform: rotateZ(-45deg);
+  -moz-transform: rotateZ(-45deg);
+  -ms-transform: rotateZ(-45deg);
+  -o-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+/* Button placement */
+.hero__toolbar {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+

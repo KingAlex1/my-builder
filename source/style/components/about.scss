@@ -34,7 +34,6 @@
 .about__right-title {
   font-size: 24px;
   font-weight: bold;
-  padding: 43px 78px 43px 80px;
   display: inline-block;
   position: relative;
   text-align: center;
@@ -55,23 +54,11 @@
 
 }
 
-.about__svg{
-  width: 263px;
-  height: 172px;
-  opacity: .2;
-  position: absolute;
-  display: block;
-  stroke: #1056d1;
-  padding-left: 25px;
+.about__right-title{
+  padding: 30px 0 0 40px;
 
 }
-.about__svg__blog-line{
- fill: none;
-}
-.about__svg-circle {
-  stroke: #1056d1;
-  fill:#1056d1;
-}
+
 .about__left-blog{
   width: 22vw;
 }

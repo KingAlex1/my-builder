@@ -13,8 +13,8 @@ block content
                             li.socials__item
                                 a(href=`${item}`)(class='socials__link_'+item)
                             use(xlink:href="/assets/img/sprite.svg#portfolio-header")
-
-                svg.hero__svg
+                
+                svg(viewBox="0 0 458 272").hero__svg
                     g.hero__svg__blog-line
                         polyline.hero__svg-polyline(points="120 120, 300 154, 174 258, 213 21, 81 44,12 192,300 155, 174 258, 12 192 ")
                         polyline.hero__svg-polyline(points="446 226,432 66, 301 191,446 226 ")
@@ -38,6 +38,8 @@ block content
                         .user__description
                             .user__name Алексей
                             .user__desc Сайт разработчика
+                    a(href="#").hero__toolbar
+                        i.hero__toolbar_elm
 
 
     section.section.about
@@ -65,11 +67,11 @@ block content
                 .user-description
                     .user-description__image
                         img(src="assets/img/content/user1.jpg", alt="").user-description__avatar
-                    .user-description__title
-                        .block-subtitle КТО Я
-                    .user-description__text
-                        p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                        p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+                .user-description__title
+                    .block-subtitle КТО Я
+                .user-description__text
+                    p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
         .about__right
             .triangle.triangle_fill_beige.about__left-triangle
                 svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
@@ -88,15 +90,15 @@ block content
                                     ul.skills-row__list
                                         li.skills-row__item
                                             .skill
-                                                svg.skill__circle(width='160' height='160')
-                                                    circle.circle-fst(r="60", cx="50%", cy="50%", stroke="#ccc", fill="none")
-                                                    circle.circle-scnd(r="60", cx="50%", cy="50%", transform="rotate(-90 80 80)", fill="none")
-                                                svg.skill__circle(width='160' height='160')
-                                                    circle.circle-fst(r="60", cx="50%", cy="50%", stroke="#ccc", fill="none")
-                                                    circle.circle-scnd(r="60", cx="50%", cy="50%", transform="rotate(-90 80 80)", fill="none")
-                                                svg.skill__circle(width='160' height='160')
-                                                    circle.circle-fst(r="60", cx="50%", cy="50%", stroke="#ccc", fill="none")
-                                                    circle.circle-scnd(r="60", cx="50%", cy="50%", transform="rotate(-90 80 80)", fill="none")
+                                                svg.skill__circle(width='100px' height='100px')
+                                                    circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#ccc", fill="none")
+                                                    circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                                svg.skill__circle(width='100px' height='100px')
+                                                    circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#ccc", fill="none")
+                                                    circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                                svg.skill__circle(width='100px' height='100px')
+                                                    circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#ccc", fill="none")
+                                                    circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
                                                 .skill__title HTML
     section.section.map
         .google-map
@@ -106,15 +108,15 @@ block content
             ul.contacts__list
                 -
                     var contacts = [
-                    ['skype_kdn'],
-                    ['astahov@gmail.com'],
-                    [ '+7 931 200 93 24'],
-                    ['Королев М.О.']
+                    ['skype', 'skype_kdn'],
+                    ['mail', '@gmail.com'],
+                    ['phone', '+79211 123 23 23'],
+                    ['mark','Королев М.О.']
                     ]
 
                 each item in contacts
                     li.contacts__item.contact-row
-                        .contact-row__icon #{item[0]}
+                        div(class='socials__link_'+item[0])
                         .contact-row__content #{item[1]}
     footer.footer
         .footer__row
@@ -125,6 +127,12 @@ block content
                         each item in ['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
                             li.menu__item
                                 a(href="#").menu__link #{item}
+                .footer__socials
+                    ul.socials-btm
+                        each item in ['vk', 'git', 'in']
+                            li.socials__item
+                                a(href=`${item}`)(class='socials__link_' + item)
+                            use(xlink:href="/assets/img/sprite.svg#portfolio-header")
             .footer__col.footer__col-right
                 .footer__text
                     ul.contacts__list-f
@@ -132,7 +140,7 @@ block content
                             var contacts = [
                             ['skype_kdn'],
                             ['astahov@gmail.com'],
-                            ['+7 931 200 93 24'],
+                            ['+7 931 200 93 24']
                             ]
 
                         each item in contacts

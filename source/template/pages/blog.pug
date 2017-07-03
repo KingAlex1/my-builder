@@ -1,7 +1,7 @@
 extends ../_template
 
 block variables
-  - var title = 'Blog'
+  - var title = 'Главная страница'
 
 block content
   section.section.hero
@@ -9,11 +9,12 @@ block content
       .hero__container
         .hero__socials
           ul.socials
-            each item in ['vk', 'tw', 'in']
+            each item in ['vk', 'git', 'in']
               li.socials__item
-                a(href=`${item}`).socials__link
+                a(href=`${item}`)(class='socials__link_'+item)
               use(xlink:href="/assets/img/sprite.svg#portfolio-header")
-        svg.hero__svg
+
+        svg(viewBox="0 0 458 272").hero__svg
           g.hero__svg__blog-line
             polyline.hero__svg-polyline(points="120 120, 300 154, 174 258, 213 21, 81 44,12 192,300 155, 174 258, 12 192 ")
             polyline.hero__svg-polyline(points="446 226,432 66, 301 191,446 226 ")
@@ -37,27 +38,42 @@ block content
             .user__description
               .user__name Алексей
               .user__desc Сайт разработчика
+        svg(viewbox="0 0 1800 343").hero__svg_2
+          g.hero__svg__blog-poli
+           polyline.hero_svg_Poly2(points="0 343,0 0,898 158, 1800 0,1800 343,0 343")
+        .hero__svg-title МОИ РАБОТЫ
+        svg(viewBox="0 0 400 156").hero__svg_3
+          g.hero_svg_blog-line
+            polyline.hero_line_header(points="7 153,72 110, 150 107, 234 164, 202 8, 255 67,99 35,202 8")
+            polyline.hero_line_header(points="7 153,99 35, 150 108")
+          g.hero__svg_blog-circle
+            circle.hero_circle-header(cx="7", cy="153", r="7")
+            circle.hero_circle-header(cx="72", cy="110", r="4")
+            circle.hero_circle-header(cx="150", cy="107", r="7")
+            circle.hero_circle-header(cx="234", cy="164", r="7")
+            circle.hero_circle-header(cx="202", cy="8", r="7")
+            circle.hero_circle-header(cx="255", cy="67", r="7")
+            circle.hero_circle-header(cx="99", cy="35", r="4")
+        a(href="#").hero__toolbar
+          i.hero__toolbar_elm
 
-  section.section.about
-    .about__left
-      .triangle.triangle_fill_white.about__left-triangle
-        svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
-          polygon(points="0,0 0,150,1000,150")
-      .about__left-content
-        ul.about__topics-list
-          each item in ['Самое вахное в SASS' , 'Приемы в верстке, без котопых не обходится ни один сайт', 'Самый необходимый набор Gulp  плагинов' , 'Почему я выбрал Jade']
-              li.about__topic-name #{item}
 
-
-    .about__right
-      .triangle.triangle_fill_beige.about__left-triangle
-        svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
-          polygon(points="1000,0 1000,150 0,150")
-      .about__right-title
-        .block-subtitle ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
-      .about__right-description
-        p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
-      .about__right-content
+  section.section.slider
+    .slider__desc
+      .slider__desc-info
+        .slider__desc-title
+          .block-subtitle  САЙТ
+        .slider__disc-skills HTML CSS JACASCRIPT
+    .slider__display
+      .slider__display-container
+        img(src="assets/img/bg/1.png" alt = "" ).slider__display-pic
+    .slider__btns
+      a(href="#").slider__btn.slider__btn_left
+      a(href="#").slider__btn.slider__btn_right
+  section.section.night-lamp
+    .lamp
+    .opinion
+    .link-me
 
 
   footer.footer
@@ -69,20 +85,18 @@ block content
             each item in ['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
               li.menu__item
                 a(href="#").menu__link #{item}
+        .footer__socials
+          ul.socials-btm
+            each item in ['vk', 'git', 'in']
+              li.socials__item
+                a(href=`${item}`)(class='socials__link_' + item)
+              use(xlink:href="/assets/img/sprite.svg#portfolio-header")
       .footer__col.footer__col-right
         .footer__text
           ul.contacts__list-f
-            -
-              var contacts = [
-              ['skype_kdn'],
-              ['astahov@gmail.com'],
-              ['+7 931 200 93 24'],
-              ]
-
-            each item in contacts
+            each item in ['skype_kdn','astahov@gmail.com','+7 931 200 93 24']
               li.contacts__item-f.contact-row-f
-                .contact-row-f__icon #{item[0]}
-                .contact-row-f__content #{item[1]}
+                .contact-row-f__content #{item}
     .footer__col.footer__col-bottom
       .footer__text-btm
         p © Алексей | создано с любовью в LoftSchool | 2016

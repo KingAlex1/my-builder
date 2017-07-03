@@ -28,6 +28,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 12px;
   height: 9px;
 }
+.icon-envelope_n {
+  background-image: url(sprite.png);
+  background-position: 0px -343px;
+  width: 45px;
+  height: 45px;
+}
 .icon-github {
   background-image: url(sprite.png);
   background-position: 0px -219px;
@@ -45,6 +51,24 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: 0px -105px;
   width: 15px;
   height: 17px;
+}
+.icon-map_n {
+  background-image: url(sprite.png);
+  background-position: 0px -428px;
+  width: 45px;
+  height: 45px;
+}
+.icon-phone_n {
+  background-image: url(sprite.png);
+  background-position: 0px -513px;
+  width: 45px;
+  height: 45px;
+}
+.icon-skype_n {
+  background-image: url(sprite.png);
+  background-position: 0px -598px;
+  width: 45px;
+  height: 45px;
 }
 .icon-vk {
   background-image: url(sprite.png);
