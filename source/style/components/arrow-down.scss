@@ -10,3 +10,16 @@
   fill: #fff;
   opacity: .7;
 }
+
+.arrow{
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  bottom: 20vh;
+  background: url(../img/sprite.png)0 0 no-repeat;
+  background-position: 0px -49px;
+  width: 26px;
+  height: 16px;
+}

@@ -1,18 +1,23 @@
 .about {
   @extend %clearfix;
-  height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .about__left,.about__right {
-  float: left;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   width: 50%;
   position: relative;
-  height: 100vh;
-
-}
+  align-content: stretch;
+  }
 
 .about__left {
   background: $white;
+  display: flex;
+
 
   }
 .about__right {
@@ -50,7 +55,7 @@
 .about__right-content{
   color: #474b57;
   font-size: 15px;
-  padding-left:82px ;
+  padding-left:8vw ;
 
 }
 

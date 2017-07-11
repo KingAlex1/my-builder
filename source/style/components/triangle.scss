@@ -23,8 +23,8 @@
 }
 
 .about__svg{
-  width: 263px;
-  height: 172px;
+  width: 25vw;
+  height: 20vh;
   opacity: .2;
   position: absolute;
   display: block;
@@ -39,8 +39,9 @@
   opacity: .2;
   position: absolute;
   display: block;
-  left: 34%;
-  top: 25%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 ;
 }
 

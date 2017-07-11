@@ -22,27 +22,28 @@
   color: #ffffff;
 }
 .user-description{
+  display: flex;
   height: 100%;
-  display: inline-block;
+  align-self: flex-end;
   padding: 0 40px 0 40px ;
+
 }
 .user-description__image{
-  display: inline-block;
+  display: flex;
   position: relative;
   background-size: 100% 100%;
   margin-top: 60px;
 
-
-
 }
 .user-description__avatar {
   display: inline-block;
-  width: 300px;
+
+  width: 30vw;
+  max-width: 300px;
   height: 250px;
   margin: 20px;
   position: relative;
   align-content: center;
-  float: left;
 
 }
 .user-description__title{
@@ -54,6 +55,7 @@
   color: #474b57;
   font-size: 18px;
   margin: 0 40px 0 40px;
+  display: inline-block;
 }
 
 .block-subtitle {

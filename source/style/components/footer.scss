@@ -1,10 +1,10 @@
 .footer {
-  height: 186px;
+  height: 8rem;
   width: 100vw;
   background-color: #222a3c ;
   opacity: .85;
   display: block;
-  margin-top:-186px;
+  margin-top: -8rem;
 }
 
 .footer__row{
@@ -16,7 +16,7 @@
   display: inline-block;
   position: relative;
   padding: 20px;
-  bottom: 28px;
+  vertical-align: top;
   opacity: .85;
 
 }
@@ -37,6 +37,7 @@
   display: inline-block;
   position: relative;
   opacity: .85;
+  vertical-align: top;
 
 }
 
@@ -45,7 +46,7 @@
   position: relative;
   text-decoration: none;
   color: $white;
-  padding: 20px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .menu {
@@ -56,7 +57,9 @@
   height: 38px;
   text-align: center;
   background-color: #2754a0;
-  margin-top: 38px;
+  position: absolute;
+  bottom: 0;
+  width: 100vw
 }
 .footer__text{
   padding: 2px 0 2px 30px;

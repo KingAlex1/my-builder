@@ -11,8 +11,10 @@ block content
           ul.socials
             each item in ['vk', 'git', 'in']
               li.socials__item
-                a(href=`${item}`)(class='socials__link_'+item)
+                a(href=`${item}`)(class='socials__link_' + item)
               use(xlink:href="/assets/img/sprite.svg#portfolio-header")
+          a(href="#").hero__toolbar
+            i.hero__toolbar_elm
 
         svg(viewBox="0 0 458 272").hero__svg
           g.hero__svg__blog-line
@@ -55,7 +57,7 @@ block content
             circle.hero_circle-header(cx="255", cy="67", r="7")
             circle.hero_circle-header(cx="99", cy="35", r="4")
         a(href="#").hero__toolbar
-          i.hero__toolbar_elm
+         
 
 
   section.section.slider

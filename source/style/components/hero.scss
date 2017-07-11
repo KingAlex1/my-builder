@@ -25,8 +25,6 @@
 .hero__user {
   @include centered();
   text-align: center;
-  margin-left: -5%;
-  margin-top: -10%;
   width: initial;
 }
 .hero__scroll-button {
@@ -44,13 +42,12 @@
   color: $white;
   z-index: 1;
 }
-.arrow{
 
-  position: absolute;
-  left: 50vw;
-  bottom: 20vh;
-  background: url(../img/sprite.png)0 0 no-repeat;
-  background-position: 0px -49px;
-  width: 26px;
-  height: 16px;
+
+.hero__socials{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }

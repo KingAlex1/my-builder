@@ -11,9 +11,10 @@ block content
                     ul.socials
                         each item in ['vk', 'git', 'in']
                             li.socials__item
-                                a(href=`${item}`)(class='socials__link_'+item)
+                                a(href=`${item}`)(class='socials__link_' + item)
                             use(xlink:href="/assets/img/sprite.svg#portfolio-header")
-
+                    a(href="#").hero__toolbar
+                        i.hero__toolbar_elm
                 svg(viewBox="0 0 458 272").hero__svg
                     g.hero__svg__blog-line
                         polyline.hero__svg-polyline(points="120 120, 300 154, 174 258, 213 21, 81 44,12 192,300 155, 174 258, 12 192 ")
@@ -39,7 +40,7 @@ block content
                             .user__name Алексей
                             .user__desc Сайт разработчика
                     a(href="#").hero__toolbar
-                        i.hero__toolbar_elm
+
                 .arrow
 
     section.triangle-info

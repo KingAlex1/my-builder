@@ -19,8 +19,9 @@ parallax {
 
 .parallax__video{
   position: absolute;
-  width: 105%;
-  margin-left: -2vw;
+  width: auto;
+  min-height: 100vh;
+  margin-left: -1rem;
 
 
 }
