@@ -1,0 +1,62 @@
+
+.contacts__item {
+  padding: 18px 10px 18px 30px;
+  display: inline-block;
+  font-size: 1rem;
+  color: #474b57;
+  font-weight: bold;
+  height: 40px;
+  width: 200px;
+  align-items: center;
+  text-align: center;
+}
+
+.contacts {
+  width: 582px;
+  height: 283px;
+  background-color: $white;
+  opacity: .7;
+  position: absolute;
+  display: block;
+  top: 25%;
+  left: 30%;
+}
+
+.contact-row__icon{
+  background-image: url("../img/skype_n.svg");
+}
+.socials{
+  padding: 20px 20px 0 20px;
+  ;
+}
+.socials__item{
+  display: inline-block;
+  padding: 16px;
+}
+
+.socials__link_vk {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: 0px -162px;
+  width: 31px;
+  height: 17px;
+  display: inline-block;
+
+}
+.socials__link_git{
+  display: inline-block;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: 0px -216px;
+  width: 26px;
+  height: 22px;
+
+}
+
+.socials__link_in {
+  background: url(../img/sprite.png) no-repeat ;
+  background-position: 0px -280px;
+  width: 24px;
+  height: 22px;
+  display: inline-block;
+
+
+}

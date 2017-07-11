@@ -6,22 +6,11 @@
   height: 300px;
 }
 
-.contacts {
-  width: 582px;
-  height: 283px;
-  background-color: $white;
-  opacity: .7;
-  position: absolute;
-  display: block;
-  top: 50%;
-  right: 50%;
-  margin: -125px -250px;
 
-}
-
-.contacts__title {
+.hero_circle-header {
   text-align: center;
   font-size: 23px;
-  color: #474b57;
-
+  font-weight: bold;
+  padding: 37px 20px 29px 40px;
 }
+

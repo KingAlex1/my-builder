@@ -1,0 +1,36 @@
+parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.parallax__layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform;
+}
+
+.parallax__video{
+  position: absolute;
+  width: 105%;
+  margin-left: -2vw;
+
+
+}
+.parallax__image {
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-position: 50% 0 ;
+}
+

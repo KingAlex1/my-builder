@@ -6,7 +6,7 @@ module.exports = function() {
             .pipe($.gp.spritesmith({
                 imgName: 'sprite.png', // итоговый спрайт
                 algorithm: 'top-down',
-                padding: 15,
+                padding: 40,
                 cssName: 'sprite-png.scss',  // файл стилей
                 cssFormat: 'css'
             }));

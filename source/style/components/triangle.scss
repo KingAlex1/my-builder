@@ -22,3 +22,83 @@
   fill: inherit;
 }
 
+.about__svg{
+  width: 263px;
+  height: 172px;
+  opacity: .2;
+  position: absolute;
+  display: block;
+  stroke: #1056d1;
+  padding-left: 25px;
+
+}
+
+.hero__svg{
+  width: 30vw;
+  height: 30vh;
+  opacity: .2;
+  position: absolute;
+  display: block;
+  left: 34%;
+  top: 25%;
+;
+}
+
+
+.hero__svg-polyline{
+  stroke: $white;
+  fill: none;
+  stroke-width: 3px;
+}
+.hero__svg-circle{
+  stroke: $white;
+  fill:$white;
+}
+.about__svg__blog-line{
+  fill: none;
+}
+.about__svg-circle {
+  stroke: #1056d1;
+  fill:#1056d1;
+}
+
+.hero__svg_2{
+  width: 100vw;
+  position:absolute ;
+  display: block;
+  fill: #151728;
+  stroke: #151728;
+  bottom: 0 ;
+  opacity: .85;
+}
+
+.hero__svg__blog-poli{
+  width: 100vw;
+
+}
+
+.hero__svg_3{
+  position: absolute;
+  display: block;
+  opacity: .85;
+  bottom: 12px;
+  left: 42%;
+  width: 18%;
+  height: 8vw;
+
+}
+.hero_line_header {
+  stroke: #3b3e4b;
+  fill: none;
+}
+
+.hero_circle-header{
+  stroke: #3b3e4b;
+  fill: #3b3e4b;
+
+}
+
+.triangle-info{
+  position: relative;
+}
+

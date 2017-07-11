@@ -9,23 +9,39 @@ block content
             .hero__container
                 .hero__socials
                     ul.socials
-                        each item in ['vk', 'tw', 'in']
+                        each item in ['vk', 'git', 'in']
                             li.socials__item
-                                a(href=`${item}`).socials__link
-                .hamburger.hero__menu
-                .arrow-down.hero__scroll-button
-                    svg.arrow-down__pic
-                        use(xlink:href="/assets/img/sprite.svg#arrow-down")
-                .hero__title
-                    .section-title
-                        svg.section-title__pic
+                                a(href=`${item}`)(class='socials__link_'+item)
                             use(xlink:href="/assets/img/sprite.svg#portfolio-header")
+                
+                svg(viewBox="0 0 458 272").hero__svg
+                    g.hero__svg__blog-line
+                        polyline.hero__svg-polyline(points="120 120, 300 154, 174 258, 213 21, 81 44,12 192,300 155, 174 258, 12 192 ")
+                        polyline.hero__svg-polyline(points="446 226,432 66, 301 191,446 226 ")
+                        polyline.hero__svg-polyline(points="446 226, 335 14, 215 180, 271 57, 446 226 ")
+                    g.hero__svg__blog-circle
+                        circle.hero__svg-circle(cx="12", cy="191", r="13")
+                        circle.hero__svg-circle(cx="174", cy="259", r="13")
+                        circle.hero__svg-circle(cx="334", cy="13", r="13")
+                        circle.hero__svg-circle(cx="445", cy="228", r="13")
+                        circle.hero__svg-circle(cx="81", cy="43", r="7")
+                        circle.hero__svg-circle(cx="214", cy="19", r="7")
+                        circle.hero__svg-circle(cx="115", cy="120", r="7")
+                        circle.hero__svg-circle(cx="216", cy="180", r="7")
+                        circle.hero__svg-circle(cx="272", cy="57", r="7")
+                        circle.hero__svg-circle(cx="299", cy="154", r="7")
+                        circle.hero__svg-circle(cx="301", cy="192", r="7")
+                        circle.hero__svg-circle(cx="433", cy="65", r="7")
                     .user.hero__user
                         .user__pic
                             img(src="assets/img/content/user.jpg", alt="").user__pic-img
                         .user__description
                             .user__name Алексей
                             .user__desc Сайт разработчика
+                    a(href="#").hero__toolbar
+                        i.hero__toolbar_elm
+
+
     section.section.about
         .about__left
             .triangle.triangle_fill_white.about__left-triangle
@@ -35,21 +51,33 @@ block content
                 //+.block-title('about-header', 'Обо мне.')
                 //+.block-title(style="background-image: url('assets/img/decor/about-header.png')")
                 .block-title__text Обо мне
+            svg.about__svg
+                g.about__svg__blog-line
+                    polyline.about__svg-polyline(points="7 153,72 110, 150 107, 234 164, 202 8, 255 67,99 35,202 8")
+                    polyline.about__svg-polyline(points="7 153,99 35, 150 108")
+                g.hero__svg__blog-circle
+                    circle.about__svg-circle(cx="7", cy="153", r="7")
+                    circle.about__svg-circle(cx="72", cy="110", r="4")
+                    circle.about__svg-circle(cx="150", cy="107", r="7")
+                    circle.about__svg-circle(cx="234", cy="164", r="7")
+                    circle.about__svg-circle(cx="202", cy="8", r="7")
+                    circle.about__svg-circle(cx="255", cy="67", r="7")
+                    circle.about__svg-circle(cx="99", cy="35", r="4")
             .about__left-content
                 .user-description
                     .user-description__image
                         img(src="assets/img/content/user1.jpg", alt="").user-description__avatar
-                    .user-description__title КТО Я
-                        .block-subtitle
-                    .user-description__text
-                        p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                        p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+                .user-description__title
+                    .block-subtitle КТО Я
+                .user-description__text
+                    p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
         .about__right
             .triangle.triangle_fill_beige.about__left-triangle
                 svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
                     polygon(points="1000,0 1000,150 0,150")
-            .about__right-title ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
-                .block-subtitle
+            .about__right-title
+                .block-subtitle ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
             .about__right-description
                 p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
             .about__right-content
@@ -58,56 +86,67 @@ block content
                         li.skills-list__item
                             .skills-row
                                 .skills-row__title #{item}
-                                ul.skills-row__list
-                                    li.skills-row__item
-                                        .skill
-                                            svg.skill__circle
-                                            .skill__title
+
+                                    ul.skills-row__list
+                                        li.skills-row__item
+                                            .skill
+                                                svg.skill__circle(width='100px' height='100px')
+                                                    circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#ccc", fill="none")
+                                                    circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                                svg.skill__circle(width='100px' height='100px')
+                                                    circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#ccc", fill="none")
+                                                    circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                                svg.skill__circle(width='100px' height='100px')
+                                                    circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#ccc", fill="none")
+                                                    circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                                .skill__title HTML
     section.section.map
         .google-map
         .contacts
             .contacts__title
-                .block-subtitle Контакты
+                .block-subtitle КОНТАКТ
             ul.contacts__list
                 -
                     var contacts = [
-                    ['vk', 'skype_kdn'],
-                    ['mail', 'astahov@gmail.com'],
-                    ['phone', '+7 931 200 93 24'],
+                    ['skype', 'skype_kdn'],
+                    ['mail', '@gmail.com'],
+                    ['phone', '+79211 123 23 23'],
+                    ['mark','Королев М.О.']
                     ]
 
                 each item in contacts
                     li.contacts__item.contact-row
-                        .contact-row__icon #{item[0]}
+                        div(class='socials__link_'+item[0])
                         .contact-row__content #{item[1]}
     footer.footer
         .footer__row
             .footer__col.footer__col-left Этот сайт я сделал в рамках обучения в Школе онлайн образования Loftschool
-        .footer__row
             .footer__col.footer__col-centr
                 .footer__menu
                     nav.menu
                         each item in ['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
                             li.menu__item
                                 a(href="#").menu__link #{item}
-            .footer__col.footer__col-right
                 .footer__socials
-                    .socials.socials_rounded
-        .footer__row
-            .footer__col.footer__col-left
+                    ul.socials-btm
+                        each item in ['vk', 'git', 'in']
+                            li.socials__item
+                                a(href=`${item}`)(class='socials__link_' + item)
+                            use(xlink:href="/assets/img/sprite.svg#portfolio-header")
+            .footer__col.footer__col-right
                 .footer__text
-                    ul.contacts__list
+                    ul.contacts__list-f
                         -
                             var contacts = [
                             ['skype_kdn'],
                             ['astahov@gmail.com'],
-                            ['+7 931 200 93 24'],
+                            ['+7 931 200 93 24']
                             ]
 
                         each item in contacts
-                            li.contacts__item.contact-row
-                                .contact-row__icon #{item[0]}
-                                .contact-row__content #{item[1]}
-            .footer__col
-                .footer__text
-                    p © Алексей | создано с любовью в LoftSchool | 2016
+                            li.contacts__item-f.contact-row-f
+                                .contact-row-f__icon #{item[0]}
+                                .contact-row-f__content #{item[1]}
+        .footer__col.footer__col-bottom
+            .footer__text-btm
+                p © Алексей | создано с любовью в LoftSchool | 2016
