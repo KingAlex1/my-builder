@@ -4,6 +4,6 @@ block variables
     - var title = 'Parallax'
 
 block content
-    video(src='assets/img/night.mp4', autoplay = 'autoplay' , loop='loop').parallax__video
+    video(src='assets/img/night.mp4', autoplay = 'autoplay' , loop='loop').parallax__video.layer(data-depth="0.00")
     parallax.parallax(id="scene")
-        img(src=`assets/img/bg/layer 1.png`, data-speed="3").parallax__image.layer(data-depth="0.00")
+        img(src=`assets/img/bg/layer 1.png`, data-speed="3").parallax__image.layer(data-depth="0.20")
