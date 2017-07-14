@@ -1,0 +1,32 @@
+extends ../parallax.layout.pug
+
+block variables
+    - var title = 'Parallax'
+
+block content
+    #parallax.parallax
+        video(src='assets/img/night.mp4', autoplay = 'autoplay' , loop='loop').parallax__video.layer(data-depth="0.00")
+        parallax.parallax(id="scene")
+            img(src=`assets/img/bg/layer 1.png`, data-speed="5").parallax__image.layer(data-depth="0.20")
+    section.welcome.authorize
+        h2.authorize__title АВТОРИЗУЙТЕСЬ
+        label.text-area
+            input(type="text", size="26", value="Логин").text-area-txt
+            input(type="password", size="26", value="Пароль").text-area-pass
+        label.checkbox-area
+            input(type="checkbox")
+            | Я человек
+        .authorize__desc Вы точно не робот?
+
+        label.radio-bnt
+            input#yes(type="radio").radio-bnt-yes
+            | Да
+            input#no(type="radio").radio-bnt-no
+            | Не_уверен
+
+
+        .welcome__description.user__description
+
+        .welcome__buttons
+            a(href="index.html").welcome__btn На_Главную
+            a(href="#").welcome__btn Войти

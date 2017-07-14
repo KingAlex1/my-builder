@@ -1,0 +1,35 @@
+.text-area{
+  display: flex;
+  flex-flow: column;
+  margin: 10px;
+
+
+}
+.text-area-txt{
+  padding: 5px;
+  margin: 5px;
+}
+.text-area-pass{
+  padding: 5px;
+  margin: 5px;
+}
+
+
+
+
+
+.radio-bnt,.checkbox-area{
+  padding: 10px;
+}
+
+.checkbox-area{
+  margin: 10px;
+}
+.radio-bnt-yes{
+  margin: 10px 10px 10px 10px;
+}
+
+.radio-bnt-no{
+  margin: 10px 10px 10px 20px;
+}
+

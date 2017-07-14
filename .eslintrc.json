@@ -1,0 +1,16 @@
+{
+    // "extends": "airbnb-base",
+    "plugins": [
+        "import"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "jquery": true,
+        "es6": true
+    }
+}

@@ -4,6 +4,24 @@ block variables
     - var title = 'Parallax'
 
 block content
-    video(src='assets/img/night.mp4', autoplay = 'autoplay' , loop='loop').parallax__video.layer(data-depth="0.00")
-    parallax.parallax(id="scene")
-        img(src=`assets/img/bg/layer 1.png`, data-speed="3").parallax__image.layer(data-depth="0.20")
+    #parallax.parallax
+        video(src='assets/img/night.mp4', autoplay = 'autoplay' , loop='loop').parallax__video.layer(data-depth="0.00")
+        parallax.parallax(id="scene")
+            img(src=`assets/img/bg/layer 1.png`, data-speed="5").parallax__image.layer(data-depth="0.20")
+    section.welcome
+        .welcome__pic.user__pic
+            img(src="assets/img/content/user.jpg", alt="").user__pic-img
+        .welcome__description.user__description
+            h1.welcome__title Алексей
+            .welcome__sidebare Сайт разработчика
+        ul.socials
+            each item in ['vk', 'git', 'in']
+                li.socials__item
+                    a(href=`${item}`)(class='socials__link_' + item)
+                use(xlink:href="/assets/img/sprite.svg#portfolio-header")
+        .welcome__buttons
+            a(href="info.html").welcome__btn Мои_работы
+            a(href="index.html").welcome__btn Обо_мне
+            a(href="blog.html").welcome__btn Блог
+
+    a(href="avtoriz.html").autoriz Авторизоваться
