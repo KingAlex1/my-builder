@@ -1,4 +1,9 @@
 
+// burger
+$('.hero__toolbar').click(function() {
+    $(this).toggleClass('active');
+});
+
 var parallaxContainer = document.getElementById('parallax'),
     layers = parallaxContainer.children;
 

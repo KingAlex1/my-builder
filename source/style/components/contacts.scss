@@ -1,7 +1,7 @@
 .contacts {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-direction: column;
   background: rgba(255,255,255,0.7);
   position: absolute;
   top: 40%;
@@ -9,6 +9,7 @@
   transform: translate(-50%,-50%);
   justify-content: space-around;
   align-items: center;
+  max-width: 500px;
 }
 
 .contacts__item {
