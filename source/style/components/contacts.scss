@@ -38,7 +38,11 @@
 }
 .socials{
   padding: 20px 20px 0 20px;
-  ;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
 }
 .socials__item{
   display: inline-block;
@@ -47,27 +51,31 @@
 
 .socials__link_vk {
   background: url(../img/sprite.png) no-repeat;
-  background-position: 0px -162px;
+  background-position: 0px -112px;
   width: 31px;
-  height: 17px;
+  height: 24px;
   display: inline-block;
+  background-size: 100%;
 
 }
 .socials__link_git{
   display: inline-block;
   background: url(../img/sprite.png) no-repeat;
-  background-position: 0px -216px;
+  background-position: 0px -126px;
   width: 26px;
-  height: 22px;
+  height: 24px;
+  background-size: 100%;
 
 }
 
 .socials__link_in {
   background: url(../img/sprite.png) no-repeat ;
-  background-position: 0px -280px;
+  background-position: 0px -150px;
   width: 24px;
-  height: 22px;
+  height: 24px;
   display: inline-block;
+  background-size: 100%;
+
 
 
 }
