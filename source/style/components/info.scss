@@ -9,14 +9,14 @@
   display: flex;
   position: relative;
   flex:1;
-  height: 100vh;
+
   background-color:$beige ;
 }
 .info__right-side{
   display: flex;
   position: relative;
   flex: 2;
-  height: 100vh;
+
   background-color: $beige;
 }
 .info__list{
@@ -30,12 +30,18 @@
   font-weight: bold;
   font-size: 1rem;
   color: #67767c;
+  text-decoration: none;
   &:hover{
     border-right: groove;
     border-color: #00b3ff;
     border-bottom-width: 5px;
   }
 }
+.info__list-content_link{
+  color: #67767c;
+  text-decoration: none;
+}
+
 .info__right-side{
   display: flex;
   flex-direction: column;
@@ -57,4 +63,14 @@
   font-size: 1rem;
   color:#67767c;
   padding: 0 20px 20px 20px;
+}
+
+.info__right-side{
+  display: flex;
+  flex-flow: column;
+  position: relative;
+
+}
+.footer__info{
+  margin-top: 0px;
 }
