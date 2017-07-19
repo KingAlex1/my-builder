@@ -1,7 +1,3 @@
-#top-menu {
-
-}
-
 #top-menu li {
   padding: 10px;
 }
@@ -13,15 +9,13 @@
 }
 
 
-#top-menu a:hover {
-  color: #000;
-}
-.active{
+
+.activ{
   border-right: solid;
   border-color: #00b3ff;
   color: #000;
 
 }
-.active > .info__list-content_link {
+.activ > .info__list-content_link {
   color: #000;
 }

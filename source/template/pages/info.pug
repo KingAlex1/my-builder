@@ -20,6 +20,20 @@ block content
                             use(xlink:href="/assets/img/sprite.svg#portfolio-header")
                     a(href="#").hero__toolbar
                         i.hero__toolbar_elm
+                    .overlay.overlay-contentpush
+                        button(type="button", class="overlay-close") Close
+                        nav
+                            ul.overlay__menu
+                                li.overlay__menu-string
+                                    a(href="blog.html").overlay__menu-item МОИ РАБОТЫ
+                                li.overlay__menu-string
+                                    a(href="index.html").overlay__menu-item ОБО МНЕ
+                                li.overlay__menu-string
+                                    a(href="info.html").overlay__menu-item БЛОГ
+                                li.overlay__menu-string
+                                    a(href="avtoriz.html").overlay__menu-item АВТОРИЗАЦИЯ
+
+
                 svg(viewBox="0 0 458 272").hero__svg
                     g.hero__svg__blog-line
                         polyline.hero__svg-polyline(points="120 120, 300 154, 174 258, 213 21, 81 44,12 192,300 155, 174 258, 12 192 ")
@@ -44,7 +58,7 @@ block content
                         .user__description
                             h1.user__name Алексей
                             h2.user__desc Сайт разработчика
-                    a(href="#").hero__toolbar
+
 
                 .arrow
 
@@ -60,7 +74,7 @@ block content
             .info__left-side
                 .info__left-content
                      -
-                        var topics = [{class:'active',href:'foo',name:'Самое Важное в SASS'},
+                        var topics = [{class:'activ',href:'foo',name:'Самое Важное в SASS'},
                                       {href:'bar',name:'Приемы в верстке без которых не обходится ни один сайт'},
                                       {href:'baz',name:'Набор в Gulp'},
                                       {href:'bee',name:'Самый необходимый набор Gulp плагинов'},
@@ -181,3 +195,5 @@ block content
         .footer__col.footer__col-bottom
             .footer__text-btm
                 p © Алексей | создано с любовью в LoftSchool | 2016
+    script(src="assets/js/classie.js")
+    script(src="assets/js/demo7.js")

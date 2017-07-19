@@ -57,8 +57,8 @@ $(window).scroll(function(){
         lastId = id;
         // Set/remove active class
         menuItems
-            .parent().removeClass("active")
-            .end().filter("[href='#"+id+"']").parent().addClass("active");
+            .parent().removeClass("activ")
+            .end().filter("[href='#"+id+"']").parent().addClass("activ");
     }
 });
 

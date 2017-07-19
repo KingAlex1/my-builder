@@ -28,7 +28,7 @@
 .fixed {
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 900;
   width: 30vw;
 }
 .info__list-content{
@@ -39,15 +39,15 @@
   font-size: 1rem;
   color: #67767c;
   text-decoration: none;
-  &:hover{
-    border-right: solid;
-    border-color: #00b3ff;
 
-  }
 }
 .info__list-content_link{
   color: #67767c;
   text-decoration: none;
+  &:hover{
+    color: #000;
+
+  }
 
 }
 
