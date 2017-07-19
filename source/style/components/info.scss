@@ -19,9 +19,17 @@
   background-color: $beige;
 }
 .info__list{
+  top: 50px;
   margin: 20px;
   text-align: right;
 
+
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 30vw;
 }
 .info__list-content{
 
@@ -70,7 +78,7 @@
   display: flex;
   flex-flow: column;
   position: relative;
-
+  padding-bottom: 50px;
 }
 .footer__info{
   margin-top: 0px;

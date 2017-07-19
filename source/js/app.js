@@ -3,7 +3,19 @@
 $('.hero__toolbar').click(function() {
     $(this).toggleClass('active');
 });
+// fixed menu
+$(document).on('scroll', scrollPageFixMenu);
+var main = $('.info__right-side'),
+    wrapMenu = $('.info__list');
 
+function scrollPageFixMenu (e) {
+    var scroll = window.pageYOffset;
+    if (scroll < main.offset().top) {
+        wrapMenu.removeClass('fixed');
+    } else {
+        wrapMenu.addClass('fixed');
+    }
+}
 //scroll
 var lastId,
     topMenu = $("#top-menu"),
