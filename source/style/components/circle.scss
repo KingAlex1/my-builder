@@ -1,9 +1,41 @@
+.skills-list__item{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.skills-row__list{
+  display: flex;
+  flex-flow: row;
+
+}
+
 .skill__circle{
+  display: flex;
   fill: none;
   stroke-width: 12px;
   stroke: #dfdcd5 ;
 
+
 }
+.circle-titl {
+  text-align: center;
+  width: 68px;
+  font-size: 12px;
+  position: absolute;
+  font-weight: bold;
+  color: #165ad1;
+
+
+}
+.skill{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
 .circle-fst {
 
 }
@@ -14,3 +46,10 @@
   transition: all 1s;
   stroke:  #1056d1 ;
 }
+
+.skills-row__title{
+  font-weight: bold;
+  color: #474b57;
+}
+
+

@@ -13,7 +13,7 @@ var lastId,
     // Anchors corresponding to menu items
     scrollItems = menuItems.map(function(){
         var item = $($(this).attr("href"));
-        if (item.length) { return item; }
+        if (item.height) { return item; }
     });
 
 // Bind click handler to menu items
@@ -23,7 +23,7 @@ menuItems.click(function(e){
         offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
     $('html, body').stop().animate({
         scrollTop: offsetTop
-    }, 300);
+    }, 400);
     e.preventDefault();
 });
 

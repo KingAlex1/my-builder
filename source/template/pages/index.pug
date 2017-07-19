@@ -88,24 +88,80 @@ block content
                 p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
             .about__right-content
                 ul.skills-list
-                    each item in ['Frontend', 'Backend', 'Workflow']
-                        li.skills-list__item
-                            .skills-row
-                                .skills-row__title #{item}
+                    li.skills-list__item
+                        .skills-row
+                            .skills-row__title Frontend
+                                ul.skills-row__list
+                                    li.skills-row__item
+                                        .skill
+                                            svg.skill__circle(width='100px' height='100px')
+                                                circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#dfdcd5", fill="none")
+                                                circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                            .circle-titl HTML5
+                                    li.skills-row__item
+                                        .skill
+                                            svg.skill__circle(width='100px' height='100px')
+                                                circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#dfdcd5", fill="none")
+                                                circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                            .circle-titl CSS3
+                                    li.skills-row__item
+                                        .skill
+                                            svg.skill__circle(width='100px' height='100px')
+                                                circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#dfdcd5", fill="none")
+                                                circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                            .circle-titl JavaScript JQuery
 
-                                    ul.skills-row__list
-                                        li.skills-row__item
-                                            .skill
-                                                svg.skill__circle(width='100px' height='100px')
-                                                    circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#dfdcd5", fill="none")
-                                                    circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
-                                                svg.skill__circle(width='100px' height='100px')
-                                                    circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#dfdcd5", fill="none")
-                                                    circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
-                                                svg.skill__circle(width='100px' height='100px')
-                                                    circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#dfdcd5", fill="none")
-                                                    circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
-                                                .skill__title HTML
+                    li.skills-list__item
+                        .skills-row
+                            .skills-row__title Backend
+                                ul.skills-row__list
+                                    li.skills-row__item
+                                        .skill
+                                            svg.skill__circle(width='100px' height='100px')
+                                                circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#dfdcd5", fill="none")
+                                                circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                            .circle-titl PHP
+                                    li.skills-row__item
+                                        .skill
+                                            svg.skill__circle(width='100px' height='100px')
+                                                circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#dfdcd5", fill="none")
+                                                circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                            .circle-titl MySQL
+                                    li.skills-row__item
+                                        .skill
+                                            svg.skill__circle(width='100px' height='100px')
+                                                circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#dfdcd5", fill="none")
+                                                circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                            .circle-titl NodeJs npm
+                                    li.skills-row__item
+                                        .skill
+                                            svg.skill__circle(width='100px' height='100px')
+                                                circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#dfdcd5", fill="none")
+                                                circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                            .circle-titl Mongo.db
+                    li.skills-list__item
+                        .skills-row
+                            .skills-row__title Workflow
+                                ul.skills-row__list
+                                    li.skills-row__item
+                                        .skill
+                                            svg.skill__circle(width='100px' height='100px')
+                                                circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#dfdcd5", fill="none")
+                                                circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                            .circle-titl Git
+                                    li.skills-row__item
+                                        .skill
+                                            svg.skill__circle(width='100px' height='100px')
+                                                circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#dfdcd5", fill="none")
+                                                circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                            .circle-titl Gulp
+                                    li.skills-row__item
+                                        .skill
+                                            svg.skill__circle(width='100px' height='100px')
+                                                circle.circle-fst(r="40px", cx="50%", cy="50%", stroke="#dfdcd5", fill="none")
+                                                circle.circle-scnd(r="40px", cx="50%", cy="50%", transform="rotate(-90 50 50)", fill="none")
+                                            .circle-titl Bower
+
     section.section.map
         .google-map
             iframe(src="https://snazzymaps.com/embed/3474", width="100%", height="1000px", style="border:none; pointer-events: none;")

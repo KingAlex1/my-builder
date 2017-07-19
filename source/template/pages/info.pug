@@ -59,7 +59,6 @@ block content
         .info
             .info__left-side
                 .info__left-content
-
                      -
                         var topics = [{class:'active',href:'foo',name:'Самое Важное в SASS'},
                                       {href:'bar',name:'Приемы в верстке без которых не обходится ни один сайт'},
@@ -67,7 +66,7 @@ block content
                                       {href:'bee',name:'Самый необходимый набор Gulp плагинов'},
                                       {href:'baa',name:'Почему Я выбрал Jade'}]
 
-                ul(id="top-menu").info__list
+                     ul(id="top-menu").info__list
                         each item in topics
                             li.info__list-content(class=item.class)
                                a(href='#'+ item.href).info__list-content_link #{item.name}

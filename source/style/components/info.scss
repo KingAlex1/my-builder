@@ -9,7 +9,6 @@
   display: flex;
   position: relative;
   flex:1;
-
   background-color:$beige ;
 }
 .info__right-side{
@@ -22,6 +21,7 @@
 .info__list{
   margin: 20px;
   text-align: right;
+
 }
 .info__list-content{
 
@@ -32,14 +32,15 @@
   color: #67767c;
   text-decoration: none;
   &:hover{
-    border-right: groove;
+    border-right: solid;
     border-color: #00b3ff;
-    border-bottom-width: 5px;
+
   }
 }
 .info__list-content_link{
   color: #67767c;
   text-decoration: none;
+
 }
 
 .info__right-side{
@@ -74,3 +75,4 @@
 .footer__info{
   margin-top: 0px;
 }
+
